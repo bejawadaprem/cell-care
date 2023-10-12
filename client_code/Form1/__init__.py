@@ -1,5 +1,8 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -8,11 +11,59 @@ class Form1(Form1Template):
     
 
     # Any code you write here will run before the form opens.
+    
+    
+
+  def text_box_1_pressed_enter(self, **event_args):
+    my_name=self.text_box_1.text
+    alert(my_name)
+
+  #def button_1_click(self, **event_args):
+    #name=self.text_box_1.text
+    #alert('Thank for your Feedback')
+    #This method is called when the button is clicked"
+
+  def text_box_2_pressed_enter(self, **event_args):
+    mobile=self.text_box_2.text
+    alert(mobile)
+    """This method is called when the user presses Enter in this text box"""
+
+  def text_box_3_pressed_enter(self, **event_args):
+    model=self.text_box_3.text
+    alert(model)
+    """This method is called when the user presses Enter in this text box"""
+
+  def text_box_4_pressed_enter(self, **event_args):
+    address=self.text_box_4.text
+    alert(address)
+    """This method is called when the user presses Enter in this text box"""
 
   def button_1_click(self, **event_args):
-    my_message = "Your Application is received\nThanyou!"
-    alert(my_message)
-    
+    #button=self.text_box_4.text
+    alert('Problem will be resolved within 24 hrs')
     """This method is called when the button is clicked"""
+  
+
+  
+
+
+  
+
+    
+
+
+
+
+
+
+    
+
+    
+
+
+  
+  
+    
+
     
 
