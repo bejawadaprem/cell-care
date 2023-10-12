@@ -43,6 +43,7 @@ class Form1(Form1Template):
     mobile= self.mobile_box.text
     model = self.model_box.text
     address = self.address_box_text
+    alert("Thank you for contacting us!")
     
     #button=self.text_box_4.text
     #alert('Thanks for contacting us!')
