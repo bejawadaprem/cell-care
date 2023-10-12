@@ -40,7 +40,7 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     #button=self.text_box_4.text
-    alert('Problem will be resolved within 24 hrs')
+    alert('Thanks for contacting us!')
     """This method is called when the button is clicked"""
   
 

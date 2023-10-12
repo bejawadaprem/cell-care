@@ -80,3 +80,4 @@ components:
       Container', bold: true, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}
+  data_bindings: []
