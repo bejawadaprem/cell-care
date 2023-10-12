@@ -9,6 +9,20 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: ColumnPanel
+    properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: outlined_card_1
+    layout_properties: {grid_position: 'TDCYHH,EVXWDH'}
+    components:
+    - type: Label
+      properties: {role: title, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: CELL CARE, font_size: null, font: '', spacing_above: medium,
+        icon_align: left, spacing_below: small, italic: true, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'WLKZAM,BXIRWA'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Name, font_size: null, font: '', spacing_above: small,
@@ -73,11 +87,3 @@ components:
   layout_properties: {slot: nav-right}
   components: []
   event_bindings: {show: navbar_links_show}
-- type: Label
-  properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Primary',
-    visible: true, text: CELL CARE, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: true, background: 'theme:Secondary
-      Container', bold: true, underline: false, icon: ''}
-  name: label_1
-  layout_properties: {slot: title}
-  data_bindings: []

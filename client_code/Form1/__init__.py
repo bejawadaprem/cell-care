@@ -1,5 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -42,13 +43,20 @@ class Form1(Form1Template):
     name = self.name_box.text
     mobile= self.mobile_box.text
     model = self.model_box.text
-    address = self.address_box_text
-    alert("Thank you for contacting us!")
+    address = self.address_box.text
+  
     
     #button=self.text_box_4.text
     #alert('Thanks for contacting us!')
-    #anvil.server.call(name,mobile,model,address)
+    anvil.server.call('add_cellcare',name,mobile,model,address)
+    Notification("Thank you for contacting us!").show()
+    self.clear_inputs()
     """This method is called when the button is clicked"""
+  def clear_inputs(self):
+    self.name_box.text=''
+    self.mobile_box.text=''
+    self.model_box.text=''
+    self.address_box.text=''
   
 
   
