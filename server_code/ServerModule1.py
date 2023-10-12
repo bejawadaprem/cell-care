@@ -15,7 +15,7 @@ def add_cellcare(name,mobile,model,address):
    app_tables.cellcare.add_row(
      name=name,
      mobile=mobile,
-     model=model,
+     model=mobile,
      address=address
    )
     
