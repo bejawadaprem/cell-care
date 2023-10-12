@@ -15,8 +15,8 @@ class Form1(Form1Template):
     
 
   def text_box_1_pressed_enter(self, **event_args):
-    my_name=self.text_box_1.text
-    alert(my_name)
+    name=self.text_box_1.text
+    alert(name)
 
   #def button_1_click(self, **event_args):
     #name=self.text_box_1.text
