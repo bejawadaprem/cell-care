@@ -24,40 +24,41 @@ class Form1(Form1Template):
     #alert('Thank for your Feedback')
     #This method is called when the button is clicked"
 
-  #def text_box_2_pressed_enter(self, **event_args):
+  def text_box_2_pressed_enter(self, **event_args):
     #mobile=self.text_box_2.text
     #alert(mobile)
     """This method is called when the user presses Enter in this text box"""
 
-  #def text_box_3_pressed_enter(self, **event_args):
+  def text_box_3_pressed_enter(self, **event_args):
     #model=self.text_box_3.text
     #alert(model)
     """This method is called when the user presses Enter in this text box"""
 
-  #def text_box_4_pressed_enter(self, **event_args):
+  def text_box_4_pressed_enter(self, **event_args):
     #address=self.text_box_4.text
     #alert(address)
     """This method is called when the user presses Enter in this text box"""
 
   def button_1_click(self, **event_args):
-    name = self.name_box.text
-    mobile= self.mobile_box.text
-    model = self.model_box.text
-    address = self.address_box.text
+    name = self.text_box_1
+    mobile= self.text_box_2
+    model = self.text_box_3
+    address = self.text_box_4
   
     
     #button=self.text_box_4.text
     #alert('Thanks for contacting us!')
-    anvil.server.call('add_cellcare',name,mobile,model,address)
+    anvil.server.call('add_cellcare','name','mobile','model','address')
     Notification("Thank you for contacting us!").show()
     self.clear_inputs()
     """This method is called when the button is clicked"""
   def clear_inputs(self):
-    self.name_box.text=''
-    self.mobile_box.text=''
-    self.model_box.text=''
-    self.address_box.text=''
-  
+    self.text_box_1=''
+    self.self.text_box_2=''
+    self.self.text_box_3=''
+    self.text_box_4=''
+  def name_box_pressed_enter(self,**event_args):
+    pass
 
   
 

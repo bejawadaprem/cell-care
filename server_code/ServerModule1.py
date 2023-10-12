@@ -16,7 +16,7 @@ def add_cellcare(name,mobile,model,address):
      name=name,
      mobile=mobile,
      model=model,
-     address=address,
+     address=address
    )
     
 #
