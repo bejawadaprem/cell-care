@@ -38,7 +38,12 @@ class Form1(Form1Template):
     #alert(address)
     """This method is called when the user presses Enter in this text box"""
 
-  #def button_1_click(self, **event_args):
+  def button_1_click(self, **event_args):
+    name = self.name_box.text
+    mobile= self.mobile_box.text
+    model = self.model_box.text
+    address = self.address_box_text
+    
     #button=self.text_box_4.text
     #alert('Thanks for contacting us!')
     #anvil.server.call(name,mobile,model,address)
