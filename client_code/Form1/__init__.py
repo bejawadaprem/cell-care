@@ -41,6 +41,7 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     #button=self.text_box_4.text
     alert('Thanks for contacting us!')
+    anvil.server.call(name,mobile,model,address)
     """This method is called when the button is clicked"""
   
 
