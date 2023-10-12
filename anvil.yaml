@@ -25,6 +25,6 @@ db_schema:
       type: string
     - name: address
       admin_ui: {width: 200, order: 3}
-      type: number
+      type: string
     title: Table 1
 renamed: true
