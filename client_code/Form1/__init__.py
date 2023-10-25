@@ -40,26 +40,14 @@ class Form1(Form1Template):
     """This method is called when the user presses Enter in this text box"""
 
   def button_1_click(self, **event_args):
-    name = self.text_box_1
-    mobile= self.text_box_2
-    model = self.text_box_3
-    address = self.text_box_4
+    name = self.text_box_1.text
+    mobile= self.text_box_2.text
+    model = self.text_box_3.text
+    address = self.text_box_4.text
   
     
-    #button=self.text_box_4.text
-    #alert('Thanks for contacting us!')
-    anvil.server.call('add_cellcare','name','mobile','model','address')
-    Notification("Thank you for contacting us!").show()
-    self.clear_inputs()
-    """This method is called when the button is clicked"""
-  def clear_inputs(self):
-    self.text_box_1=''
-    self.self.text_box_2=''
-    self.self.text_box_3=''
-    self.text_box_4=''
-  def name_box_pressed_enter(self,**event_args):
-    pass
-
+    
+  
   
 
 

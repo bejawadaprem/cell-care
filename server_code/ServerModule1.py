@@ -11,12 +11,8 @@ import anvil.server
 # Here is an example - you can replace it with your own:
 #
 @anvil.server.callable
-def add_cellcare(name,mobile,model,address):
-   app_tables.cellcare.add_row(
-     name=name,
-     mobile=mobile,
-     model=mobile,
-     address=address
-   )
+def add_submit(name,mobile,model,address):
+  app_tables.cellcare(
     
+  )
 #
