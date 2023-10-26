@@ -12,5 +12,8 @@ import anvil.server
 #
 @anvil.server.callable
 def add_submit(name,mobile,model,address):
-  app_tables.cellcare.add_row(name=name,mobile=mobile,model=model,address=address)
+  first_row = app_tables.cellcare.add_row(name=name)
+  first_row['model']=model
+  first_row['address']=address
+  first_row['mobile']=mobile
   
